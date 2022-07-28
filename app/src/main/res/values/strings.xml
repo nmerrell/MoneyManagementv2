@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">Money Management</string>
+    <string name="sourceHint">Source</string>
+    <string name="incomeHint">Income</string>
+    <string name="expenseHint">Expense</string>
+    <string name="return_button">Return Button</string>
+    <string name="add_source">Add Source</string>
+    <string name="add_income">Add Income</string>
+    <string name="add_expenses">Add Expenses</string>
+    <string name="reset">Reset</string>
+    <string name="totalIncome">Total Income </string>
+    <string name="totalExpense">Total Expenese </string>
+    <string name="totalAmt">Total</string>
+    <string name="delete"> X </string>
+    <string name="income">Income</string>
+    <string name="expense">Expenses</string>
+    <string name="options">Options</string>
+    <string name="source">Source</string>
+    <string name="category">Category</string>
+    <string name="no_data">No data entered</string>
+    <string name="overallIncome">Overall Available Income - </string>
+    <string name="menu_settings"><font size="20">Settings</font></string>
+    <string name="menu_archive"><font size="20">Archive</font></string>
+    <string name="menu_about"><font size="20">About</font></string>
+</resources>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <Spinner
+        android:id="@+id/archiveYear"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_margin="15dp"
+        android:background="@drawable/xml_border"
+        android:paddingEnd="2dp"
+        android:paddingStart="2dp"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#ff000000" />
+
+    <Spinner
+        android:id="@+id/archiveMonth"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_margin="15dp"
+        android:background="@drawable/xml_border"
+        android:paddingEnd="2dp"
+        android:paddingStart="2dp"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#ff000000" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Income"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:textStyle="bold"
+        android:background="@color/light_blue"
+        android:textColor="@color/colorPrimary"
+        android:textSize="22sp"
+        android:gravity="start|center"/>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="250dp">
+        <TableLayout
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:gravity="center"
+            android:stretchColumns="*"
+            android:id="@+id/incomeTable"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:nestedScrollingEnabled="true"/>
+    </androidx.core.widget.NestedScrollView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Expense"
+        android:background="@color/light_blue"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:textColor="@color/colorPrimary"
+        android:textStyle="bold"
+        android:textSize="22sp"
+        android:gravity="start|center"/>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="250dp">
+        <TableLayout
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:gravity="center"
+            android:stretchColumns="*"
+            android:id="@+id/expenseTable"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:nestedScrollingEnabled="true"/>
+    </androidx.core.widget.NestedScrollView>
+
+
+</LinearLayout>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/natha/Documents/MoneyManagement/app/src/main/res/layout/activity_archive_main.xml" value="0.18333333333333332" />
+        <entry key="..\:/Users/natha/Documents/MoneyManagement/app/src/main/res/layout/activity_expense_breakdown.xml" value="0.1125" />
+        <entry key="..\:/Users/natha/Documents/MoneyManagement/app/src/main/res/layout/activity_main_frag.xml" value="0.14765625" />
+        <entry key="..\:/Users/natha/Documents/MoneyManagement/app/src/main/res/layout/activity_main_screen.xml" value="0.11552567237163815" />
+        <entry key="..\:/Users/natha/Documents/MoneyManagement/app/src/main/res/layout/activity_settings_page.xml" value="0.1125" />
+        <entry key="..\:/Users/natha/Documents/MoneyManagement/app/src/main/res/layout/activity_splash_screen.xml" value="0.1125" />
+        <entry key="..\:/Users/natha/Documents/MoneyManagement/app/src/main/res/layout/activity_table_view.xml" value="0.1125" />
+        <entry key="..\:/Users/natha/Documents/MoneyManagement/app/src/main/res/layout/archive_fragment.xml" value="0.1125" />
+        <entry key="..\:/Users/natha/Documents/MoneyManagement/app/src/main/res/layout/dialog_add_expense.xml" value="0.1125" />
+        <entry key="..\:/Users/natha/Documents/MoneyManagement/app/src/main/res/layout/dialog_add_item.xml" value="0.1125" />
+        <entry key="..\:/Users/natha/Documents/MoneyManagement/app/src/main/res/layout/dialog_menu_about.xml" value="0.1125" />
+        <entry key="..\:/Users/natha/Documents/MoneyManagement/app/src/main/res/layout/expense_fragment.xml" value="0.1125" />
+        <entry key="..\:/Users/natha/Documents/MoneyManagement/app/src/main/res/layout/income_fragment.xml" value="0.1125" />
+        <entry key="..\:/Users/natha/Documents/MoneyManagement/app/src/main/res/layout/spinner_dropdown_list.xml" value="0.1" />
+        <entry key="..\:/Users/natha/Documents/MoneyManagement/app/src/main/res/layout/spinner_item.xml" value="0.1" />
+      </map>
+    </option>
+  </component>
+  <component name="ExternalStorageConfigurationManager" enabled="true" />
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" project-jdk-name="1.8" project-jdk-type="JavaSDK" />
+</project>

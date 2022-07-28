@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:p1="http://schemas.android.com/apk/res/android"
+    p1:layout_width="match_parent"
+    p1:orientation="vertical"
+    p1:layout_height="match_parent"
+    p1:background="#ffffffff">
+    <TableRow
+        p1:layout_width="match_parent"
+        p1:layout_height="50dp"
+        p1:layout_marginTop="10dp"
+        p1:layout_marginBottom="10dp">
+        <TextView
+            p1:layout_width="match_parent"
+            p1:layout_height="match_parent"
+            p1:text="Add Expense Source"
+            p1:textSize="22sp"
+            p1:textStyle="bold"
+            p1:gravity="center"/>
+    </TableRow>
+    <TableRow
+        p1:layout_width="match_parent"
+        p1:layout_height="50dp"
+        p1:layout_marginTop="10dp"
+        p1:layout_marginBottom="10dp">
+
+        <TextView
+            p1:layout_width="100dp"
+            p1:layout_height="match_parent"
+            p1:gravity="bottom|end"
+            p1:text="Source"
+            p1:textAppearance="?android:attr/textAppearanceMedium"
+            p1:textColor="#ff000000" />
+
+        <EditText
+            p1:id="@+id/expenseName"
+            p1:layout_width="150dp"
+            p1:layout_height="match_parent"
+            p1:layout_marginStart="30dp"
+            p1:gravity="center_horizontal"
+            p1:inputType="text"
+            p1:textAppearance="?android:attr/textAppearanceMedium"
+            p1:textColor="#ff000000" />
+    </TableRow>
+    <TableRow
+        p1:layout_width="match_parent"
+        p1:layout_marginBottom="10dp"
+        p1:layout_height="50dp">
+
+        <TextView
+            p1:layout_width="100dp"
+            p1:layout_height="match_parent"
+            p1:gravity="bottom|end"
+            p1:text="Amount"
+            p1:textAppearance="?android:attr/textAppearanceMedium"
+            p1:textColor="#ff000000" />
+
+        <EditText
+            p1:id="@+id/expenseAmount"
+            p1:layout_width="150dp"
+            p1:layout_height="match_parent"
+            p1:layout_marginStart="30dp"
+            p1:gravity="center_horizontal"
+            p1:inputType="numberDecimal"
+            p1:selectAllOnFocus="true"
+            p1:textAppearance="?android:attr/textAppearanceMedium"
+            p1:textColor="#ff000000" />
+    </TableRow>
+    <TableRow
+        p1:layout_width="match_parent"
+        p1:layout_height="50dp"
+        p1:layout_marginBottom="10dp">
+
+        <TextView
+            p1:layout_width="100dp"
+            p1:layout_height="match_parent"
+            p1:gravity="center_vertical|end"
+            p1:text="Category"
+            p1:textAppearance="?android:attr/textAppearanceMedium"
+            p1:textColor="#ff000000" />
+
+        <Spinner
+            p1:id="@+id/expenseCategory"
+            p1:layout_width="150dp"
+            p1:layout_height="match_parent"
+            p1:layout_marginStart="30dp"
+            p1:background="@drawable/xml_border"
+            p1:paddingEnd="2dp"
+            p1:paddingStart="2dp"
+            p1:textAppearance="?android:attr/textAppearanceMedium"
+            p1:textColor="#ff000000" />
+    </TableRow>
+    <LinearLayout
+        p1:layout_width="match_parent"
+        p1:layout_height="50dp"
+        p1:layout_marginTop="15dp"
+        p1:layout_marginBottom="15dp"
+        p1:gravity="center"
+        p1:orientation="horizontal">
+        <Button
+            p1:id="@+id/expenseNegativeButton"
+            p1:layout_width="100dp"
+            p1:layout_height="match_parent"
+            p1:layout_marginEnd="10dp"
+            p1:layout_marginStart="10dp"
+            p1:background="@drawable/xml_button_delete_style"
+            p1:gravity="center"
+            p1:text="Delete"
+            p1:textColor="#000"/>
+        <Button
+            p1:id="@+id/expenseNeutralButton"
+            p1:layout_width="100dp"
+            p1:layout_height="match_parent"
+            p1:layout_marginEnd="10dp"
+            p1:layout_marginStart="10dp"
+            p1:background="@drawable/xml_button_style"
+            p1:gravity="center"
+            p1:text="Cancel"
+            p1:textColor="#000"/>
+        <Button
+            p1:id="@+id/expensePositiveButton"
+            p1:layout_width="100dp"
+            p1:layout_height="match_parent"
+            p1:layout_marginEnd="10dp"
+            p1:layout_marginStart="10dp"
+            p1:background="@drawable/xml_button_style"
+            p1:gravity="center"
+            p1:text="Add"
+            p1:textColor="#000" />
+    </LinearLayout>
+</LinearLayout>

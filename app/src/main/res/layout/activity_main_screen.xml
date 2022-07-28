@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+    <TableRow
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="bottom|end"
+            android:text="Total Income"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/overviewIncomeAmount"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="10dp"
+            android:layout_weight="1"
+            android:gravity="bottom"
+            android:textColor="@color/darkGreen"
+            android:textSize="20sp" />
+    </TableRow>
+    <TableRow
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="bottom|end"
+            android:text="Total Expenses"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/overviewExpenseAmount"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="10dp"
+            android:layout_weight="1"
+            android:gravity="bottom"
+            android:textColor="#FF2361"
+            android:textSize="20sp" />
+    </TableRow>
+    <TableRow
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="bottom|end"
+            android:text="Total"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/overviewTotalAmount"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="10dp"
+            android:layout_weight="1"
+            android:gravity="bottom"
+            android:textSize="20sp" />
+    </TableRow>
+    <TableRow
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_height="50dp">
+
+        <Button
+            android:id="@+id/archiveMonthButton"
+            android:layout_width="200dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/xml_button_style"
+            android:gravity="center"
+            android:text="Archive Month"
+            android:textColor="#000"
+            android:textSize="20sp" />
+    </TableRow>
+
+    <TableRow
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_height="50dp">
+
+        <Button
+            android:id="@+id/resetMonthButton"
+            android:layout_width="200dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/xml_reset_button_style"
+            android:gravity="center"
+            android:text="Reset"
+            android:textColor="#FFF"
+            android:textStyle="bold"
+            android:textSize="20sp" />
+    </TableRow>
+
+</LinearLayout>
