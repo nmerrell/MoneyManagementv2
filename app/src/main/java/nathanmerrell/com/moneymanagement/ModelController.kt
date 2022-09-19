@@ -11,7 +11,7 @@ class ModelController{
         private val dbModule = DatabaseModule()
 
         fun openDatabase(context: Context){
-            val loadDB = false
+            val loadDB = true
             dbModule.DBModule(context, loadDB)
             dataService.service(dbModule.databaseFile().absolutePath)
         }
