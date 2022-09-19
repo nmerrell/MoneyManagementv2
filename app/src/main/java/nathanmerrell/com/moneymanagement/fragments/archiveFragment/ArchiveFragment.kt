@@ -19,7 +19,6 @@ import android.widget.AdapterView
 import androidx.fragment.app.Fragment
 
 
-@TargetApi(Build.VERSION_CODES.O)
 class ArchiveFragment : Fragment() {
     private lateinit var archiveView: View
     private lateinit var archiveIncome: ArrayList<DropDownListItem>

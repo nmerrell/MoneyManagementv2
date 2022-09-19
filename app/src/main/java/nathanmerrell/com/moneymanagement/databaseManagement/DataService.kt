@@ -76,7 +76,7 @@ class DataService {
         val sql = "Select * from Category"
         val c: Cursor = db.rawQuery(sql, null)
         while (c.moveToNext()){
-            categories.add(c.getString(c.getColumnIndexOrThrow("Type")))
+            categories.add(c.getString(c.getColumnIndex("Type")))
         }
         c.close()
 
@@ -92,8 +92,8 @@ class DataService {
         val incomeDateSQL = "SELECT * FROM ARCHIVE_INCOME"
         val iC = db.rawQuery(incomeDateSQL, null)
         while (iC.moveToNext()) {
-            val dbMonth = iC.getString(iC.getColumnIndexOrThrow("Month"))
-            val dbYear = iC.getString(iC.getColumnIndexOrThrow("Year"))
+            val dbMonth = iC.getString(iC.getColumnIndex("Month"))
+            val dbYear = iC.getString(iC.getColumnIndex("Year"))
             if (checkMonthYear(dbMonth, dbYear)){
                 if (incomeDBMonth == null && incomeDBYear == null) {
                     incomeDBMonth = dbMonth
@@ -106,8 +106,8 @@ class DataService {
         val expenseDateSQL = "SELECT * FROM ARCHIVE_EXPENSE"
         val eC = db.rawQuery(expenseDateSQL, null)
         while (eC.moveToNext()) {
-            val dbYear = eC.getString(eC.getColumnIndexOrThrow("Year"))
-            val dbMonth = eC.getString(eC.getColumnIndexOrThrow("Month"))
+            val dbYear = eC.getString(eC.getColumnIndex("Year"))
+            val dbMonth = eC.getString(eC.getColumnIndex("Month"))
             if (checkMonthYear(dbMonth, dbYear)){
                 if (expenseDbMonth == null && expenseDBYear == null) {
                     expenseDbMonth = dbMonth
@@ -138,10 +138,10 @@ class DataService {
         val sql = "SELECT * FROM ARCHIVE_${if (table == 0) "Income" else "Expense"}"
         val c = db.rawQuery(sql, null)
         while (c.moveToNext()) {
-            val dbMonth = c.getString(c.getColumnIndexOrThrow("Month"))
-            val dbYear = c.getString(c.getColumnIndexOrThrow("Year"))
-            val amount = c.getString(c.getColumnIndexOrThrow(if (table == 0) "Income" else "Expense"))
-            val source = c.getString(c.getColumnIndexOrThrow("Source"))
+            val dbMonth = c.getString(c.getColumnIndex("Month"))
+            val dbYear = c.getString(c.getColumnIndex("Year"))
+            val amount = c.getString(c.getColumnIndex(if (table == 0) "Income" else "Expense"))
+            val source = c.getString(c.getColumnIndex("Source"))
 
             if (source == item.text && amount == item.value && month == dbMonth && year == dbYear) {
                 return true
@@ -164,11 +164,11 @@ class DataService {
         var sql = "SELECT * FROM ARCHIVE_INCOME"
         val incomeCursor = db.rawQuery(sql, null)
         while (incomeCursor.moveToNext()) {
-            val dbYear = incomeCursor.getString(incomeCursor.getColumnIndexOrThrow("Year"))
-            val dbMonth = incomeCursor.getString(incomeCursor.getColumnIndexOrThrow("Month"))
+            val dbYear = incomeCursor.getString(incomeCursor.getColumnIndex("Year"))
+            val dbMonth = incomeCursor.getString(incomeCursor.getColumnIndex("Month"))
 
             if (dbYear == year && dbMonth == month.substring(0, 3)) {
-                val income = DropDownListItem(incomeCursor.getString(incomeCursor.getColumnIndexOrThrow("Source")), incomeCursor.getString(incomeCursor.getColumnIndexOrThrow("Income")), "")
+                val income = DropDownListItem(incomeCursor.getString(incomeCursor.getColumnIndex("Source")), incomeCursor.getString(incomeCursor.getColumnIndex("Income")), "")
                 incomeList.add(income)
             }
         }
@@ -177,11 +177,11 @@ class DataService {
         sql = "SELECT * FROM ARCHIVE_EXPENSE"
         val expenseCursor = db.rawQuery(sql, null)
         while (expenseCursor.moveToNext()) {
-            val dbYear = expenseCursor.getString(incomeCursor.getColumnIndexOrThrow("Year"))
-            val dbMonth = expenseCursor.getString(incomeCursor.getColumnIndexOrThrow("Month"))
+            val dbYear = expenseCursor.getString(incomeCursor.getColumnIndex("Year"))
+            val dbMonth = expenseCursor.getString(incomeCursor.getColumnIndex("Month"))
 
             if (dbYear == year && dbMonth == month.substring(0, 3)) {
-                val expense = DropDownListItem(expenseCursor.getString(expenseCursor.getColumnIndexOrThrow("Source")), expenseCursor.getString(expenseCursor.getColumnIndexOrThrow("Expense")), expenseCursor.getString(expenseCursor.getColumnIndexOrThrow("Category")))
+                val expense = DropDownListItem(expenseCursor.getString(expenseCursor.getColumnIndex("Source")), expenseCursor.getString(expenseCursor.getColumnIndex("Expense")), expenseCursor.getString(expenseCursor.getColumnIndex("Category")))
                 expenseList.add(expense)
             }
         }

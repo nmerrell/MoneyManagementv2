@@ -18,9 +18,13 @@
         <entry key="..\:/Users/natha/Documents/MoneyManagement/app/src/main/res/layout/income_fragment.xml" value="0.1125" />
         <entry key="..\:/Users/natha/Documents/MoneyManagement/app/src/main/res/layout/spinner_dropdown_list.xml" value="0.1" />
         <entry key="..\:/Users/natha/Documents/MoneyManagement/app/src/main/res/layout/spinner_item.xml" value="0.1" />
+        <entry key="..\:/Users/natha/Projects/MoneyManagementv2/app/src/main/res/layout/activity_archive_main.xml" value="0.16145833333333334" />
+        <entry key="..\:/Users/natha/Projects/MoneyManagementv2/app/src/main/res/layout/spinner_dropdown_list.xml" value="0.378125" />
+        <entry key="..\:/Users/natha/Projects/MoneyManagementv2/app/src/main/res/layout/spinner_item.xml" value="0.378125" />
+        <entry key="..\:/Users/natha/Projects/MoneyManagementv2/app/src/main/res/menu/options_menu.xml" value="0.378125" />
       </map>
     </option>
   </component>
   <component name="ExternalStorageConfigurationManager" enabled="true" />
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK" />
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" project-jdk-name="1.8" project-jdk-type="JavaSDK" />
 </project>
